@@ -33,6 +33,19 @@
             <li><a href="#access">ACCESS</a></li>
         </ul>
      </nav>
+
+  <div class="hamburger">
+    <span></span>
+  </div>
+  <nav class="header-nav-sp">
+        <ul>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#event">EVENT</a></li>
+            <li><a href="#access">ACCESS</a></li>
+        </ul>
+     </nav>
   </header>  
 
 <!--画像-->
@@ -174,6 +187,16 @@
   
   </div>
 </footer>
+<script src="https://ajax.googleleapis.com/ajax/libs/jquery.min.js"></script>
+<script>
+  $(function(){
+   $(".hamburger").on("click",function(){
+   $(".hamburger").toggleClass("open");
+   $(".hamburger-nav-sp").fadeToggle();
+   }
+  });
 
+  
+</script>
 </body>
 </html>
